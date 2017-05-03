@@ -1,0 +1,21 @@
+page-como-chegar {
+  .conteudo-como-chegar{
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  .desc-como-chegar{
+    padding-top: 10px;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .mapa-como-chegar{
+    margin-top: 35px;
+    text-align: center;
+  }
+
+}

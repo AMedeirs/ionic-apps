@@ -1,0 +1,30 @@
+page-home {
+  .conteudo-home {
+     height: 100%;
+     min-height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+
+   .home-menu {
+       padding-bottom: 20px;
+   }
+
+   .home-menu button{
+        margin-bottom: 18px; //margem entre botões
+        font-size: 16px;
+    }
+
+    a:link{
+      text-decoration: none;
+    }
+
+    a:visited{
+      text-decoration: none;
+    }
+
+    a:active{
+      text-decoration: none;
+    }
+}

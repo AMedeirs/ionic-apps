@@ -1,0 +1,39 @@
+<ion-header>
+
+  <ion-navbar color="secondary">
+    <ion-title>O Evento</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="conteudo-evento">
+    <ion-grid>
+      <ion-row>
+        <div class="evento-title">
+           <h4>Seja Bem-Vindo!</h4>
+           <hr>
+        </div>
+      </ion-row>
+
+      <ion-row>
+        <div class="evento-desc">
+          <p>O Encontro Estadual do Censo Escolar é realizado anualmente em Manaus e
+            visa fortalecer a cooperação e responsabilização dos entes e agentes
+            envolvidos no Censo Escolar, favorecendo a melhoria na qualidade do
+            trabalho e as relações entre os parceiros (estado, municípios e escolas).</p>
+          <p>A edição de 2017, ocorrerá nos dias 22 à 26 de maio no auditório da
+            EETI Senador Petrônio Portella.</p>
+        </div>
+      </ion-row>
+
+      <div class="evento-como-chegar">
+          <button ion-button round medium color="secondary" icon-left (click)="abrirPagComoChegar()">
+             <ion-icon name="pin"></ion-icon> Como Chegar
+          </button>
+      </div>
+
+    </ion-grid>
+  </div>
+</ion-content>

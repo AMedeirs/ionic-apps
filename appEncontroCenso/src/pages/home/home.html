@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+     <img src="assets/images/cabecalho.png" max-width="100%" height="auto">
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="bg-style" >
+
+  <div class="conteudo-home">
+   <div class="home-menu">
+     <ion-grid>
+
+     <button ion-button block medium color="secondary" icon-left (click)="abrirPagEvento()">
+        <ion-icon name="information-circle"></ion-icon> O Evento
+      </button>
+
+     <button ion-button block medium color="secondary" icon-left (click)="abrirPagComoChegar()">
+        <ion-icon name="pin"></ion-icon> Como Chegar
+      </button>
+
+     <button ion-button block medium color="secondary" icon-left (click)="abrirPagProgramacao()">
+         <ion-icon name="calendar"></ion-icon>Programação
+     </button>
+
+     <button ion-button block medium color="secondary" icon-left >
+         <ion-icon name="contacts"></ion-icon> Palestrantes
+      </button>
+
+     <a href="https://docs.google.com/forms/d/e/1FAIpQLSeskjmvFL0COpz_BPDoAYZV3V-hDabRSDkGM3AKcVgbvWS14Q/viewform?usp=sf_link" target="_blank"> <button ion-button block medium color="secondary" icon-left>
+         <ion-icon name="checkmark"></ion-icon> Avalie
+     </button></a>
+    </ion-grid>
+   </div>
+ </div>
+</ion-content>

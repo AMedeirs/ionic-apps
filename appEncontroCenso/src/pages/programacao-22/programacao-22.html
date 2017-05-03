@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>Segunda-Feira, 22 de Maio</ion-title>
+  </ion-navbar>
+
+  <ion-toolbar color="secondary">
+    <ion-segment no-margin [(ngModel)]="tiposProgramacao" color="light">
+      <ion-segment-button [value]="'palestras'">
+        Palestras
+      </ion-segment-button>
+      <ion-segment-button [value]="'oficinas'">
+        Oficinas
+      </ion-segment-button>
+      <ion-segment-button [value]="'mesaRedonda'">
+        Mesa Redonda
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div [ngSwitch]="tiposProgramacao">
+
+      <div class="programacao-22-listas-individuais">
+        <div *ngSwitchCase="'palestras'">
+          <ion-list>
+            <ion-item *ngFor="let palestra of varPalestras">
+            <h5 style="padding-top: 8px"> {{palestra.nome}} </h5>
+            <p>Palestrante: {{palestra.palestrante}}</p>
+            <ion-note item-right> {{palestra.horario}} <ion-icon name="time"></ion-icon></ion-note>
+            </ion-item>
+          </ion-list>
+        </div>
+
+      <div *ngSwitchCase="'oficinas'">
+        <ion-list>
+          <ion-item *ngFor="let oficina of varOficinas">
+          <h5 style="padding-top: 8px"> {{oficina.nome}} </h5>
+          <p>Palestrante: {{oficina.palestrante}}</p>
+          <ion-note item-right> {{oficina.horario}} <ion-icon name="time"></ion-icon></ion-note>
+          </ion-item>
+        </ion-list>
+      </div>
+
+      <div *ngSwitchCase="'mesaRedonda'">
+        <ion-list>
+          <ion-item *ngFor="let mesaRedonda1 of varMesasRedonda">
+          <h5 style="padding-top: 8px">{{mesaRedonda1.nome}}</h5>
+          <p>Palestrante: {{mesaRedonda1.palestrante}}</p>
+          <ion-note item-right> {{mesaRedonda1.horario}} <ion-icon name="time"></ion-icon></ion-note>
+          </ion-item>
+        </ion-list>
+      </div>
+    </div>
+
+
+      <div *ngSwitchCase="" class="programacao-22-lista-principal">
+        <ion-list>
+          <ion-item-divider color="secondary">
+            Palestras
+          </ion-item-divider>
+          <ion-item *ngFor="let palestra of varPalestras">
+          <h5 style="padding-top: 8px"> {{palestra.nome}} </h5>
+          <p>Palestrante: {{palestra.palestrante}}</p>
+          <ion-note item-right>{{palestra.horario}} <ion-icon name="time"></ion-icon></ion-note>
+          </ion-item>
+          <ion-item-divider color="secondary">
+            Oficinas
+          </ion-item-divider>
+          <ion-item *ngFor="let oficina of varOficinas">
+          <h5 style="padding-top: 8px">{{oficina.nome}}</h5>
+          <p>Palestrante: {{oficina.palestrante}}</p>
+          <ion-note item-right > {{oficina.horario}} <ion-icon name="time"></ion-icon></ion-note>
+          </ion-item>
+          <ion-item-divider color="secondary">
+            Mesa Redonda
+          </ion-item-divider>
+          <ion-item *ngFor="let mesaRedonda1 of varMesasRedonda">
+          <h5 style="padding-top: 8px">{{mesaRedonda1.nome}}</h5>
+          <p>Palestrante: {{mesaRedonda1.palestrante}}</p>
+          <ion-note item-right> {{mesaRedonda1.horario}} <ion-icon name="time"></ion-icon></ion-note>
+          </ion-item>
+        </ion-list>
+      </div>
+    </div>
+</ion-content>
