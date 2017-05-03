@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams} from 'ionic-angular';
-
+import { IonicPage, NavController, NavParams, ModalController} from 'ionic-angular';
+import { ModalProgPalestras22 } from '../modal-prog-palestras-22/modal-prog-palestras-22';
 
 @IonicPage()
 @Component({
@@ -13,7 +13,7 @@ export class Programacao22 {
   varOficinas: any;
   varMesasRedonda: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
     this.varPalestras = [
       { nome: "A importância do Censo Escolar", palestrante: "Silvana Morais", horario:"10:00" , linkApresentacao: "https://drive.google.com/file/d/0B5aNr3gQ21izbXR6SjgzZGY2ZG8/view?usp=sharing"},
       { nome: "Melhorias para o Censo Escolar 2016", palestrante: "Darlene Melo", horario:"9:00", linkApresentacao: "https://drive.google.com/file/d/0B5aNr3gQ21izV082R2NMTzlRYk0/view?usp=sharing" },
@@ -31,5 +31,13 @@ export class Programacao22 {
     ];
   }
 
-  
+  openModal(palestra){
+    let obj = palestra;
+    let myModal = this.modalCtrl.create(ModalProgPalestras22, obj); 
+    myModal.present();
+
+      /*let myModal = this.modalCtrl.create(ModalProgPalestras22);
+      myModal.present();*/
+  }
+
 }

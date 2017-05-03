@@ -10,6 +10,7 @@ import { Evento } from '../pages/evento/evento';
 import { ComoChegar } from '../pages/como-chegar/como-chegar';
 import { Programacao } from '../pages/programacao/programacao';
 import { Programacao22 } from '../pages/programacao-22/programacao-22';
+import { ModalProgPalestras22 } from '../pages/modal-prog-palestras-22/modal-prog-palestras-22';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { Programacao22 } from '../pages/programacao-22/programacao-22';
     Evento,
     ComoChegar,
     Programacao,
-    Programacao22
+    Programacao22,
+    ModalProgPalestras22
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { Programacao22 } from '../pages/programacao-22/programacao-22';
     Evento,
     ComoChegar,
     Programacao,
-    Programacao22
+    Programacao22,
+    ModalProgPalestras22
   ],
   providers: [
     StatusBar,
