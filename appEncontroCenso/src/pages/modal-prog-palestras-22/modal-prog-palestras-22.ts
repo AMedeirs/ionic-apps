@@ -1,30 +1,33 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 
-/**
- * Generated class for the ModalProgPalestras22 page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
+
 @IonicPage()
 @Component({
   selector: 'page-modal-prog-palestras-22',
   templateUrl: 'modal-prog-palestras-22.html',
 })
 export class ModalProgPalestras22 {
-
+  conteudoNome: string = this.navParams.get('nome');
+  conteudoHorario: string = this.navParams.get('horario');
+  conteudoData: string = this.navParams.get('data');
+  conteudoLink: string = this.navParams.get('linkApresentacao');
+  conteudoPalestrante: string = this.navParams.get('palestrante');
+  conteudoPalestranteEmail: string = this.navParams.get('palestranteEmail');
+  conteudoPalestranteFone: string = this.navParams.get('palestranteFone');
+  isEnabled: boolean = false;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
+    if( this.conteudoLink == '#'){
+      this.isEnabled = false;
+    } else {
+      this.isEnabled = true;
+    }
+
   }
 
   closeModal(){
     this.viewCtrl.dismiss();
   }
 
-  conteudoNome: string = this.navParams.get('nome');
-  conteudoPalestrante: string = this.navParams.get('palestrante');
-  conteudoHorario: string = this.navParams.get('horario');
-  conteudoLink: string = this.navParams.get('linkApresentacao');
-  
 }

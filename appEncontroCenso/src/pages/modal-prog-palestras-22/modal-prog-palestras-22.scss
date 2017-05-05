@@ -1,3 +1,41 @@
 page-modal-prog-palestras-22 {
+  .conteudo-detalhes{
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
 
+  .conteudo-title{
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .conteudo-descricao{
+    padding-top: 1px;
+    font-size: 16px;
+    text-indent: 10px;
+    text-align: left;
+  }
+
+  .conteudo-download{
+    padding-top: 35px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  a:link{
+    text-decoration: none;
+  }
+
+  a:visited{
+    text-decoration: none;
+  }
+
+  a:active{
+    text-decoration: none;
+  }
 }

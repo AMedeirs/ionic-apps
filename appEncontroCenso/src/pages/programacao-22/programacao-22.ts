@@ -15,25 +15,25 @@ export class Programacao22 {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
     this.varPalestras = [
-      { nome: "A importância do Censo Escolar", palestrante: "Silvana Morais", horario:"10:00" , linkApresentacao: "https://drive.google.com/file/d/0B5aNr3gQ21izbXR6SjgzZGY2ZG8/view?usp=sharing"},
-      { nome: "Melhorias para o Censo Escolar 2016", palestrante: "Darlene Melo", horario:"9:00", linkApresentacao: "https://drive.google.com/file/d/0B5aNr3gQ21izV082R2NMTzlRYk0/view?usp=sharing" },
-      { nome: "Cadastro da Escola", palestrante: "Sarah Barbosa", horario:"11:00" }
+      { nome: "A importância do Censo Escolar", horario:"10:00", data: "22/05/2017", linkApresentacao: "https://drive.google.com/file/d/0B1uh9xN2drHrZDFGZEdfU3p5VDA/view?usp=sharing", palestrante: "Silvana Morais", palestranteEmail: "silvanamorais@seduc.net", palestranteFone: "(92) 98888-8888"},
+      { nome: "Melhorias para o Censo Escolar 2016", horario:"9:00", data: "22/05/2017", linkApresentacao: "https://drive.google.com/file/d/0B1uh9xN2drHrdVJJOGVaVVFkWjA/view?usp=sharing", palestrante: "Darlene Melo", palestranteEmail: "darlene_melo@seduc.net", palestranteFone: "(92) 98888-8888"},
+      { nome: "Cadastro da Escola", horario:"11:00", data: "22/05/2017", linkApresentacao:"https://drive.google.com/file/d/0B1uh9xN2drHrQlJZa3hidTZTR1E/view?usp=sharing", palestrante: "Sarah Barbosa", palestranteEmail: "sarah.pinheiro@seduc.net", palestranteFone: "(92) 98888-8888" }
     ];
 
     this.varOficinas = [
-      { nome: "Cadastro de Turma", palestrante: "Renan Braga", horario:"13:00"},
-      { nome: "Atividade Complementar - Mais Educação", palestrante: "Adriano Silva", horario:"14:00" }
+      { nome: "Cadastro de Turma", horario:"13:00", data: "22/05/2017", palestrante: "Renan Braga", linkApresentacao: "#"},
+      { nome: "Atividade Complementar - Mais Educação", horario:"14:00", data: "22/05/2017", palestrante: "Adriano Silva", linkApresentacao: "#" }
     ];
 
     this.varMesasRedonda = [
-      { nome: "Educação Especial e o Censo Escolar", palestrante: "Lenice Salermo", horario:"15:00"},
-      { nome: "Estudo Sobre a Tendência da Matrícula", palestrante: "Sarah Barbosa", horario:"16:00" }
+      { nome: "Educação Especial e o Censo Escolar",  horario:"15:00", data: "22/05/2017", palestrante: "Lenice Salermo", linkApresentacao: "#"},
+      { nome: "Estudo Sobre a Tendência da Matrícula", horario:"16:00", data: "22/05/2017", palestrante: "Sarah Barbosa", linkApresentacao: "#" }
     ];
   }
 
   openModal(palestra){
     let obj = palestra;
-    let myModal = this.modalCtrl.create(ModalProgPalestras22, obj); 
+    let myModal = this.modalCtrl.create(ModalProgPalestras22, obj);
     myModal.present();
 
       /*let myModal = this.modalCtrl.create(ModalProgPalestras22);

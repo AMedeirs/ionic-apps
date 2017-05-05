@@ -26704,6 +26704,52 @@ page-home a:active {
   text-decoration: none;
 }
 
+page-modal-prog-palestras-22 .conteudo-detalhes {
+  height: 100%;
+  min-height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+page-modal-prog-palestras-22 .conteudo-title {
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+page-modal-prog-palestras-22 .conteudo-descricao {
+  padding-top: 1px;
+  font-size: 16px;
+  text-indent: 10px;
+  text-align: left;
+}
+
+page-modal-prog-palestras-22 .conteudo-download {
+  padding-top: 35px;
+  text-align: center;
+  font-size: 16px;
+}
+
+page-modal-prog-palestras-22 a:link {
+  text-decoration: none;
+}
+
+page-modal-prog-palestras-22 a:visited {
+  text-decoration: none;
+}
+
+page-modal-prog-palestras-22 a:active {
+  text-decoration: none;
+}
+
 page-programacao .conteudo-menu-programacao {
   height: 100%;
   min-height: 100%;
