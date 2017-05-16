@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { Evento } from '../evento/evento';
 import { ComoChegar } from '../como-chegar/como-chegar';
 import { Programacao } from '../programacao/programacao';
+import { Perguntas } from '../perguntas/perguntas';
 
 @Component({
   selector: 'page-home',
@@ -25,5 +26,7 @@ export class HomePage {
     this.navCtrl.push(Programacao);
   };
 
-  
+  abrirPagPerguntas(){
+    this.navCtrl.push(Perguntas);
+  }
 }

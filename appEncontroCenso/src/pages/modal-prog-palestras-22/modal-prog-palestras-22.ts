@@ -15,15 +15,13 @@ export class ModalProgPalestras22 {
   conteudoPalestrante: string = this.navParams.get('palestrante');
   conteudoPalestranteEmail: string = this.navParams.get('palestranteEmail');
   conteudoPalestranteFone: string = this.navParams.get('palestranteFone');
-  isEnabled: boolean = false;
+  isEnabled: boolean = null;
+
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
-    if( this.conteudoLink == '#'){
-      this.isEnabled = false;
-    } else {
+    if(this.conteudoLink !== "##"){
       this.isEnabled = true;
-    }
-
+    }else this.isEnabled = null;
   }
 
   closeModal(){

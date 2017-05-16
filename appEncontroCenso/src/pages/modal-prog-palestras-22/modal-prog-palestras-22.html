@@ -15,7 +15,7 @@
   <div class="conteudo-detalhes">
     <ion-grid>
       <ion-row> <div class="conteudo-title">
-        <h6>Título: {{conteudoNome}} </h6> <hr></div>
+        <h5>{{conteudoNome}}</h5> <hr></div>
       </ion-row>
 
       <div class="conteudo-descricao">
@@ -26,7 +26,7 @@
       <ion-row> <p icon-left> <ion-icon name="person"></ion-icon><ion-icon name="call"></ion-icon> Telefone: {{conteudoPalestranteFone}}</p> </ion-row>
       </div>
 
-      <div class="conteudo-download"> <a href="{{conteudoLink}}" target="_blank"> <button ion-button [disabled]="!isEnabled" round small color="secondary" icon-left>
+      <div class="conteudo-download"> <a href="{{conteudoLink}}" target="_blank"> <button ion-button  [disabled]="!isEnabled" round small color="secondary" icon-left>
           <ion-icon name="cloud-download"></ion-icon> Download da Palestra </button></a>
       </div>
     </ion-grid>

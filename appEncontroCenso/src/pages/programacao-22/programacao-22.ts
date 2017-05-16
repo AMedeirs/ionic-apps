@@ -14,6 +14,7 @@ export class Programacao22 {
   varMesasRedonda: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
+
     this.varPalestras = [
       { nome: "A importância do Censo Escolar", horario:"10:00", data: "22/05/2017", linkApresentacao: "https://drive.google.com/file/d/0B1uh9xN2drHrZDFGZEdfU3p5VDA/view?usp=sharing", palestrante: "Silvana Morais", palestranteEmail: "silvanamorais@seduc.net", palestranteFone: "(92) 98888-8888"},
       { nome: "Melhorias para o Censo Escolar 2016", horario:"9:00", data: "22/05/2017", linkApresentacao: "https://drive.google.com/file/d/0B1uh9xN2drHrdVJJOGVaVVFkWjA/view?usp=sharing", palestrante: "Darlene Melo", palestranteEmail: "darlene_melo@seduc.net", palestranteFone: "(92) 98888-8888"},
@@ -21,13 +22,13 @@ export class Programacao22 {
     ];
 
     this.varOficinas = [
-      { nome: "Cadastro de Turma", horario:"13:00", data: "22/05/2017", palestrante: "Renan Braga", linkApresentacao: "#"},
-      { nome: "Atividade Complementar - Mais Educação", horario:"14:00", data: "22/05/2017", palestrante: "Adriano Silva", linkApresentacao: "#" }
+      { nome: "Cadastro de Turma", horario:"13:00", data: "22/05/2017", palestrante: "Renan Braga", linkApresentacao: "##"},
+      { nome: "Atividade Complementar - Mais Educação", horario:"14:00", data: "22/05/2017", palestrante: "Adriano Silva", linkApresentacao: "##" }
     ];
 
     this.varMesasRedonda = [
-      { nome: "Educação Especial e o Censo Escolar",  horario:"15:00", data: "22/05/2017", palestrante: "Lenice Salermo", linkApresentacao: "#"},
-      { nome: "Estudo Sobre a Tendência da Matrícula", horario:"16:00", data: "22/05/2017", palestrante: "Sarah Barbosa", linkApresentacao: "#" }
+      { nome: "Educação Especial e o Censo Escolar",  horario:"15:00", data: "22/05/2017", palestrante: "Lenice Salermo", linkApresentacao: "##"},
+      { nome: "Estudo Sobre a Tendência da Matrícula", horario:"16:00", data: "22/05/2017", palestrante: "Sarah Barbosa", linkApresentacao: "##" }
     ];
   }
 
@@ -36,8 +37,6 @@ export class Programacao22 {
     let myModal = this.modalCtrl.create(ModalProgPalestras22, obj);
     myModal.present();
 
-      /*let myModal = this.modalCtrl.create(ModalProgPalestras22);
-      myModal.present();*/
   }
 
 }
