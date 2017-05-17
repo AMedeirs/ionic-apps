@@ -7,7 +7,6 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 
-
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { Evento } from '../pages/evento/evento';
@@ -16,6 +15,7 @@ import { Programacao } from '../pages/programacao/programacao';
 import { Programacao22 } from '../pages/programacao-22/programacao-22';
 import { ModalProgPalestras22 } from '../pages/modal-prog-palestras-22/modal-prog-palestras-22';
 import { Perguntas } from '../pages/perguntas/perguntas';
+import { Credenciamento } from '../pages/credenciamento/credenciamento';
 
 export const firebaseConfig = {
     apiKey: "AIzaSyAHt_rmp3FizwTE451b4DHFQ0TmKqQBdSM",
@@ -25,6 +25,7 @@ export const firebaseConfig = {
     storageBucket: "appencontrocenso.appspot.com",
     messagingSenderId: "531909231024"
 };
+
 @NgModule({
   declarations: [
     MyApp,
@@ -34,7 +35,8 @@ export const firebaseConfig = {
     Programacao,
     Programacao22,
     ModalProgPalestras22,
-    Perguntas
+    Perguntas,
+    Credenciamento
   ],
   imports: [
     BrowserModule,
@@ -52,7 +54,8 @@ export const firebaseConfig = {
     Programacao,
     Programacao22,
     ModalProgPalestras22,
-    Perguntas
+    Perguntas,
+    Credenciamento
   ],
   providers: [
     StatusBar,

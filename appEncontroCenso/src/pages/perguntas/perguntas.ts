@@ -10,27 +10,10 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 })
 export class Perguntas {
 
-  lista: FirebaseListObservable<any>
-  mensagem: string;
-  nome: string;
-  municipio: string;
-  palestra: string;
+  lsUsuarios: FirebaseListObservable<any>
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public afd: AngularFireDatabase) {
-    this.lista = afd.list("https://appencontrocenso.firebaseio.com/perguntas");
-  }
-
-  enviar(){
-    let m = {
-      palestra: this.palestra,
-      texto: this.mensagem,
-      data: new Date(),
-      nome: this.nome,
-      municipio: this.municipio
-    };
-    this.lista.push(m).then(() => {
-      this.mensagem = "";
-    });
+    this.lsUsuarios = afd.list("/Usuarios");
   }
 
   ionViewDidLoad() {

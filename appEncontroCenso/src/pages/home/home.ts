@@ -4,6 +4,7 @@ import { Evento } from '../evento/evento';
 import { ComoChegar } from '../como-chegar/como-chegar';
 import { Programacao } from '../programacao/programacao';
 import { Perguntas } from '../perguntas/perguntas';
+import { Credenciamento } from '../credenciamento/credenciamento';
 
 @Component({
   selector: 'page-home',
@@ -28,5 +29,9 @@ export class HomePage {
 
   abrirPagPerguntas(){
     this.navCtrl.push(Perguntas);
+  }
+
+  abrirPagCredenciamento(){
+    this.navCtrl.push(Credenciamento);
   }
 }
